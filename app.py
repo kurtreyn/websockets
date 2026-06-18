@@ -11,8 +11,6 @@ from connect4 import PLAYER1, PLAYER2, Connect4
 
 JOIN = {}
 
-WATCH = {}
-
 
 async def error(websocket, message):
     """
@@ -166,7 +164,7 @@ async def handler(websocket):
 
 
 async def main():
-    async with websockets.serve(handler, "", 8001):
+    async with websockets.serve(handler, "", 8080):
         await asyncio.Future()  # run forever
 
 

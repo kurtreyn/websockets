@@ -13,8 +13,6 @@ from connect4 import PLAYER1, PLAYER2, Connect4
 
 JOIN = {}
 
-WATCH = {}
-
 
 async def error(websocket, message):
     """
