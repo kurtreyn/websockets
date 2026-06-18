@@ -26,6 +26,7 @@ class Connect4:
         Player who played the last move.
 
         """
+        print(f"last_player: {PLAYER1}, last_player: {PLAYER2}")
         return PLAYER1 if len(self.moves) % 2 else PLAYER2
 
     @property
@@ -46,6 +47,7 @@ class Connect4:
         Raises :exc:`ValueError` if the move is illegal.
 
         """
+        print(f"play: {player}, column: {column}")
         if player == self.last_player:
             raise ValueError("It isn't your turn.")
 
